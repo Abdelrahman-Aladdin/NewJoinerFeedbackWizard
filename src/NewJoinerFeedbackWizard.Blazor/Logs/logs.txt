@@ -9962,3 +9962,1142 @@
 2025-11-06 15:58:50.169 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
 2025-11-06 15:58:50.170 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.3255ms
 2025-11-06 15:58:50.170 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:05:58.623 +02:00 [INF] Starting web host.
+2025-11-06 16:06:13.232 +02:00 [DBG] Loaded ABP modules:
+2025-11-06 16:06:13.232 +02:00 [DBG] - NewJoinerFeedbackWizard.Blazor.NewJoinerFeedbackWizardBlazorModule
+2025-11-06 16:06:13.232 +02:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-11-06 16:06:13.232 +02:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-11-06 16:06:13.232 +02:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-11-06 16:06:13.232 +02:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-11-06 16:06:13.232 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-11-06 16:06:13.232 +02:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-11-06 16:06:13.232 +02:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-11-06 16:06:13.232 +02:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-11-06 16:06:13.232 +02:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-11-06 16:06:13.232 +02:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-11-06 16:06:13.232 +02:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-11-06 16:06:13.233 +02:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-11-06 16:06:13.233 +02:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-11-06 16:06:13.233 +02:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-11-06 16:06:13.233 +02:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-11-06 16:06:13.233 +02:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-11-06 16:06:13.233 +02:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-11-06 16:06:13.233 +02:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-11-06 16:06:13.233 +02:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-11-06 16:06:13.233 +02:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-11-06 16:06:13.233 +02:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-11-06 16:06:13.233 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-11-06 16:06:13.233 +02:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-11-06 16:06:13.233 +02:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-11-06 16:06:15.478 +02:00 [INF] User profile is available. Using 'C:\Users\aedris\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 16:06:25.870 +02:00 [INF] Initialized all ABP modules.
+2025-11-06 16:06:26.183 +02:00 [INF] Now listening on: https://localhost:44341
+2025-11-06 16:06:26.183 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 16:06:26.184 +02:00 [INF] Hosting environment: Development
+2025-11-06 16:06:26.184 +02:00 [INF] Content root path: D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor
+2025-11-06 16:06:32.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2025-11-06 16:06:32.720 +02:00 [INF] The 'WebRootPath' is not set, The 'CheckLibs' feature not needed.
+2025-11-06 16:06:46.051 +02:00 [INF] Executing endpoint '/ (/)'
+2025-11-06 16:06:46.189 +02:00 [INF] Executed endpoint '/ (/)'
+2025-11-06 16:06:46.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 13500.8239ms
+2025-11-06 16:06:46.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:46.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:46.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:46.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:46.236 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 7.6846ms
+2025-11-06 16:06:46.236 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:46.313 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:46.315 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 86.9763ms
+2025-11-06 16:06:46.344 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:46.344 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 116.2843ms
+2025-11-06 16:06:46.513 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:46.514 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 285.4627ms
+2025-11-06 16:06:46.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:06:46.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:06:46.559 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:06:46.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:06:46.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:06:46.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.js - null null
+2025-11-06 16:06:46.658 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:06:46.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 100.6696ms
+2025-11-06 16:06:46.660 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:06:46.661 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 101.4616ms
+2025-11-06 16:06:46.664 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:06:46.664 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:06:46.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 104.8904ms
+2025-11-06 16:06:46.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 107.1514ms
+2025-11-06 16:06:46.676 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:06:46.676 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 116.6747ms
+2025-11-06 16:06:46.705 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js'
+2025-11-06 16:06:46.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.js - 200 40677 application/javascript 144.6413ms
+2025-11-06 16:06:46.713 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - null null
+2025-11-06 16:06:46.745 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-11-06 16:06:46.746 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - 200 71186 application/json 32.6337ms
+2025-11-06 16:06:46.757 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.native.l4ptthxatg.js - null null
+2025-11-06 16:06:46.758 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.drv0pr9n5o.js - null null
+2025-11-06 16:06:46.794 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/appsettings.json - null null
+2025-11-06 16:06:46.795 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.trg9usmumx.pdb - null null
+2025-11-06 16:06:46.796 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.abcjahin3r.pdb - null null
+2025-11-06 16:06:46.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb - null null
+2025-11-06 16:06:46.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.n4b3zllbdj.pdb - null null
+2025-11-06 16:06:46.832 +02:00 [INF] Sending file. Request path: '/appsettings.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\appsettings.json'
+2025-11-06 16:06:46.833 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/appsettings.json - 200 287 application/json 38.638ms
+2025-11-06 16:06:46.855 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.runtime.drv0pr9n5o.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.drv0pr9n5o.js'
+2025-11-06 16:06:46.855 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.drv0pr9n5o.js - 200 194767 application/javascript 97.7848ms
+2025-11-06 16:06:46.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/favicon.ico - null null
+2025-11-06 16:06:46.902 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\favicon.ico'
+2025-11-06 16:06:46.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/favicon.ico - 200 32038 image/x-icon 24.3372ms
+2025-11-06 16:06:46.955 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.native.l4ptthxatg.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.l4ptthxatg.js'
+2025-11-06 16:06:46.955 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.native.l4ptthxatg.js - 200 145424 application/javascript 199.1751ms
+2025-11-06 16:06:46.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.ujydst9kun.wasm - null null
+2025-11-06 16:06:46.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm - null null
+2025-11-06 16:06:46.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.wf45sw6jz6.wasm - null null
+2025-11-06 16:06:46.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.klivnciiem.wasm - null null
+2025-11-06 16:06:46.970 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.HttpApi.Client.wf45sw6jz6.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.HttpApi.Client.wf45sw6jz6.wasm'
+2025-11-06 16:06:46.970 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.wf45sw6jz6.wasm - 200 7957 application/wasm 4.1699ms
+2025-11-06 16:06:46.980 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm'
+2025-11-06 16:06:46.981 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm - 200 24853 application/wasm 14.6325ms
+2025-11-06 16:06:46.988 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Application.Contracts.ujydst9kun.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Application.Contracts.ujydst9kun.wasm'
+2025-11-06 16:06:46.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.ujydst9kun.wasm - 200 13077 application/wasm 22.0597ms
+2025-11-06 16:06:46.988 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Blazor.Client.klivnciiem.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Blazor.Client.klivnciiem.wasm'
+2025-11-06 16:06:46.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.klivnciiem.wasm - 200 22805 application/wasm 22.1099ms
+2025-11-06 16:06:47.015 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.015 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.015 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.015 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.039 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.HttpApi.Client.trg9usmumx.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\6ghhmv92l8-trg9usmumx.gz'
+2025-11-06 16:06:47.039 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3idvszubql-avqpe6fc5r.gz'
+2025-11-06 16:06:47.039 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Blazor.Client.n4b3zllbdj.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3icfsg3ama-n4b3zllbdj.gz'
+2025-11-06 16:06:47.039 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Application.Contracts.abcjahin3r.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\8ocfupibo4-abcjahin3r.gz'
+2025-11-06 16:06:47.040 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.040 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.040 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.040 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:47.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb - 200 18561 application/octet-stream 243.2724ms
+2025-11-06 16:06:47.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.n4b3zllbdj.pdb - 200 30889 application/octet-stream 243.1618ms
+2025-11-06 16:06:47.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.trg9usmumx.pdb - 200 18789 application/octet-stream 244.7813ms
+2025-11-06 16:06:47.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.abcjahin3r.pdb - 200 20081 application/octet-stream 243.871ms
+2025-11-06 16:06:47.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-06 16:06:47.087 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:47.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.7628ms
+2025-11-06 16:06:47.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.29ms
+2025-11-06 16:06:47.087 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:47.087 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-06 16:06:47.119 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - null null
+2025-11-06 16:06:47.137 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - null null
+2025-11-06 16:06:47.150 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map'
+2025-11-06 16:06:47.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - 200 56573 text/plain 31.6656ms
+2025-11-06 16:06:47.179 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.runtime.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map'
+2025-11-06 16:06:47.179 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - 200 275939 text/plain 42.3039ms
+2025-11-06 16:06:54.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=90f25c175b424dcdb0c8200bf2a53968&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:06:54.735 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:54.743 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:54.744 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=90f25c175b424dcdb0c8200bf2a53968&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 17.9043ms
+2025-11-06 16:06:54.766 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:54.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:54.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:54.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:54.768 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:54.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.9482ms
+2025-11-06 16:06:54.768 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:54.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.0621ms
+2025-11-06 16:06:54.792 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:54.792 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:54.792 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 25.3036ms
+2025-11-06 16:06:54.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 26.3279ms
+2025-11-06 16:06:54.840 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:06:54.840 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:06:54.840 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:06:54.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:06:54.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:06:54.842 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:06:54.842 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.6896ms
+2025-11-06 16:06:54.842 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:06:54.842 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:06:54.842 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.5722ms
+2025-11-06 16:06:54.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 2.5343ms
+2025-11-06 16:06:54.843 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:06:54.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 2.3321ms
+2025-11-06 16:06:54.849 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:06:54.849 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 8.8229ms
+2025-11-06 16:06:54.874 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:54.875 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.0869ms
+2025-11-06 16:06:54.875 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:57.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a10397ceb5b24ff68799dc0f5a62485c&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:06:57.555 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:57.557 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:57.557 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a10397ceb5b24ff68799dc0f5a62485c&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.7217ms
+2025-11-06 16:06:57.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:57.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:57.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:57.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:57.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.1198ms
+2025-11-06 16:06:57.576 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:57.576 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:57.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.5208ms
+2025-11-06 16:06:57.591 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:57.591 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 15.796ms
+2025-11-06 16:06:57.592 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:57.592 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 17.1506ms
+2025-11-06 16:06:57.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:06:57.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:06:57.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:06:57.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:06:57.653 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:06:57.654 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:06:57.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.6412ms
+2025-11-06 16:06:57.655 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:06:57.655 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 2.4459ms
+2025-11-06 16:06:57.655 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:06:57.655 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:06:57.655 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.774ms
+2025-11-06 16:06:57.656 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 3.1834ms
+2025-11-06 16:06:57.661 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:06:57.661 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 8.6175ms
+2025-11-06 16:06:57.692 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:57.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.0656ms
+2025-11-06 16:06:57.693 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:57.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=c1b4b43e38ed44eb8aabd2b1cace1d0a&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:06:57.967 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:57.968 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:57.969 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=c1b4b43e38ed44eb8aabd2b1cace1d0a&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.9533ms
+2025-11-06 16:06:57.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:57.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:57.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:57.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:57.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.2758ms
+2025-11-06 16:06:57.992 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:57.992 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:57.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.7097ms
+2025-11-06 16:06:58.003 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:58.004 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 12.3856ms
+2025-11-06 16:06:58.004 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:58.004 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 13.544ms
+2025-11-06 16:06:58.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:06:58.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:06:58.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:06:58.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:06:58.051 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:06:58.052 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:06:58.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.7646ms
+2025-11-06 16:06:58.053 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:06:58.053 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:06:58.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 2.109ms
+2025-11-06 16:06:58.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.6042ms
+2025-11-06 16:06:58.053 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:06:58.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 2.0496ms
+2025-11-06 16:06:58.059 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:06:58.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 7.5621ms
+2025-11-06 16:06:58.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:58.084 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.2156ms
+2025-11-06 16:06:58.084 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:58.203 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2bd607a042c14c7593c23a9b0282f043&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:06:58.204 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:58.206 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:58.206 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2bd607a042c14c7593c23a9b0282f043&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.2196ms
+2025-11-06 16:06:58.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:58.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:58.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:58.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:58.227 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:58.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.1942ms
+2025-11-06 16:06:58.227 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:58.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.5697ms
+2025-11-06 16:06:58.238 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:58.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 12.0119ms
+2025-11-06 16:06:58.239 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:58.240 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 14.0206ms
+2025-11-06 16:06:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:06:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:06:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:06:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:06:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:06:58.289 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:06:58.289 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:06:58.289 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:06:58.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 2.0797ms
+2025-11-06 16:06:58.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 2.2495ms
+2025-11-06 16:06:58.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 2.3999ms
+2025-11-06 16:06:58.290 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:06:58.290 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 2.662ms
+2025-11-06 16:06:58.295 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:06:58.295 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 8.0039ms
+2025-11-06 16:06:58.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:58.325 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.1676ms
+2025-11-06 16:06:58.325 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:58.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a15b4ee187d4489791f89c357e533c72&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:06:58.392 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:58.394 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:06:58.394 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a15b4ee187d4489791f89c357e533c72&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.9454ms
+2025-11-06 16:06:58.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:06:58.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:06:58.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:06:58.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:06:58.416 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.7765ms
+2025-11-06 16:06:58.416 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:06:58.416 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:06:58.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.274ms
+2025-11-06 16:06:58.427 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:06:58.427 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 11.772ms
+2025-11-06 16:06:58.428 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:06:58.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 13.0811ms
+2025-11-06 16:06:58.477 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:06:58.478 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.3664ms
+2025-11-06 16:06:58.479 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:06:58.562 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/resource-collection.EtqS5.js - null null
+2025-11-06 16:06:58.564 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:58.568 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:06:58.568 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/resource-collection.EtqS5.js - 200 61413 application/javascript 6.0734ms
+2025-11-06 16:07:02.685 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2 - null null
+2025-11-06 16:07:02.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/images/logo/leptonx/logo-light-thumbnail.png - null null
+2025-11-06 16:07:02.715 +02:00 [INF] Sending file. Request path: '/images/logo/leptonx/logo-light-thumbnail.png'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\images\logo\leptonx\logo-light-thumbnail.png'
+2025-11-06 16:07:02.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/images/logo/leptonx/logo-light-thumbnail.png - 200 9230 image/png 27.3178ms
+2025-11-06 16:07:02.720 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.webassembly.theming\9.3.6\staticwebassets\libs\fontawesome\webfonts\fa-solid-900.woff2'
+2025-11-06 16:07:02.720 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2 - 200 156496 font/woff2 34.3368ms
+2025-11-06 16:07:02.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d - null null
+2025-11-06 16:07:02.762 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a9cba2977ee54f00b116dc88e748f0b9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:07:02.763 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:07:02.763 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\libs\bootstrap-icons\font\fonts\bootstrap-icons.woff2'
+2025-11-06 16:07:02.764 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d - 200 92064 font/woff2 34.6645ms
+2025-11-06 16:07:02.764 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:07:02.764 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=a9cba2977ee54f00b116dc88e748f0b9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.4617ms
+2025-11-06 16:07:02.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:07:02.780 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:07:02.780 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:07:02.780 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:07:02.781 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:07:02.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.1251ms
+2025-11-06 16:07:02.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.0305ms
+2025-11-06 16:07:02.781 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:07:02.794 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:07:02.794 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:07:02.794 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 14.5008ms
+2025-11-06 16:07:02.794 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 14.766ms
+2025-11-06 16:07:02.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:07:02.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:07:02.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:07:02.837 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:07:02.837 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:07:02.837 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:07:02.837 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.7954ms
+2025-11-06 16:07:02.838 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:07:02.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.3162ms
+2025-11-06 16:07:02.838 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:07:02.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 3.0866ms
+2025-11-06 16:07:02.839 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:07:02.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 2.1302ms
+2025-11-06 16:07:02.843 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:07:02.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 7.9963ms
+2025-11-06 16:07:02.862 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:07:02.863 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.2096ms
+2025-11-06 16:07:02.863 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:15:50.608 +02:00 [INF] Starting web host.
+2025-11-06 16:16:03.914 +02:00 [DBG] Loaded ABP modules:
+2025-11-06 16:16:03.915 +02:00 [DBG] - NewJoinerFeedbackWizard.Blazor.NewJoinerFeedbackWizardBlazorModule
+2025-11-06 16:16:03.915 +02:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-11-06 16:16:03.915 +02:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-11-06 16:16:03.915 +02:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-11-06 16:16:03.915 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-11-06 16:16:03.915 +02:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-11-06 16:16:03.915 +02:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-11-06 16:16:03.915 +02:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-11-06 16:16:03.915 +02:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-11-06 16:16:03.915 +02:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-11-06 16:16:03.915 +02:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-11-06 16:16:03.915 +02:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-11-06 16:16:06.210 +02:00 [INF] User profile is available. Using 'C:\Users\aedris\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 16:16:15.657 +02:00 [INF] Initialized all ABP modules.
+2025-11-06 16:16:15.814 +02:00 [INF] Now listening on: https://localhost:44341
+2025-11-06 16:16:15.814 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 16:16:15.815 +02:00 [INF] Hosting environment: Development
+2025-11-06 16:16:15.815 +02:00 [INF] Content root path: D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor
+2025-11-06 16:17:05.867 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2025-11-06 16:17:05.876 +02:00 [INF] The 'WebRootPath' is not set, The 'CheckLibs' feature not needed.
+2025-11-06 16:17:12.570 +02:00 [INF] Executing endpoint '/ (/)'
+2025-11-06 16:17:12.634 +02:00 [INF] Executed endpoint '/ (/)'
+2025-11-06 16:17:12.637 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 6770.4299ms
+2025-11-06 16:17:12.671 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:17:12.674 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 4.2688ms
+2025-11-06 16:17:12.675 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:17:12.703 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - null null
+2025-11-06 16:17:12.749 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-11-06 16:17:12.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - 200 71186 application/json 47.4827ms
+2025-11-06 16:17:12.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/appsettings.json - null null
+2025-11-06 16:17:12.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb - null null
+2025-11-06 16:17:12.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb - null null
+2025-11-06 16:17:12.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb - null null
+2025-11-06 16:17:12.778 +02:00 [INF] The file /appsettings.json was not modified
+2025-11-06 16:17:12.778 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/appsettings.json - 304 null application/json 2.0639ms
+2025-11-06 16:17:12.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb - null null
+2025-11-06 16:17:12.932 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.932 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.932 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.932 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.953 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3idvszubql-avqpe6fc5r.gz'
+2025-11-06 16:17:12.953 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3icfsg3ama-2q5gofpfw6.gz'
+2025-11-06 16:17:12.953 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\8ocfupibo4-fs34avhcc5.gz'
+2025-11-06 16:17:12.953 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.953 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.avqpe6fc5r.pdb - 200 18561 application/octet-stream 175.5245ms
+2025-11-06 16:17:12.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb - 200 30941 application/octet-stream 174.3546ms
+2025-11-06 16:17:12.954 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\6ghhmv92l8-7cgg8zn5xv.gz'
+2025-11-06 16:17:12.954 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb - 200 18821 application/octet-stream 176.1021ms
+2025-11-06 16:17:12.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm - null null
+2025-11-06 16:17:12.954 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:12.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm - null null
+2025-11-06 16:17:12.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb - 200 20113 application/octet-stream 176.205ms
+2025-11-06 16:17:12.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm - null null
+2025-11-06 16:17:12.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm - null null
+2025-11-06 16:17:12.957 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm'
+2025-11-06 16:17:12.957 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm - 200 7957 application/wasm 2.8316ms
+2025-11-06 16:17:12.972 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm'
+2025-11-06 16:17:12.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm - 200 13077 application/wasm 18.6816ms
+2025-11-06 16:17:12.973 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm'
+2025-11-06 16:17:12.973 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm'
+2025-11-06 16:17:12.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Domain.Shared.g82rpd1yw0.wasm - 200 24853 application/wasm 18.8313ms
+2025-11-06 16:17:12.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm - 200 22805 application/wasm 18.4097ms
+2025-11-06 16:17:17.117 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:17:17.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.6192ms
+2025-11-06 16:17:17.118 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:17:17.126 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-06 16:17:17.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.3328ms
+2025-11-06 16:17:17.128 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-06 16:17:17.198 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:17:17.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.5339ms
+2025-11-06 16:17:17.199 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:17:18.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?code=yb6nSO2WXv8_4C0GLK6fsTjE0k__I_0xQyRU-qLUmOM&state=6649088e9dab45e3bc435212e4c65b66&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:17:18.609 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:17:18.614 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:17:18.614 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?code=yb6nSO2WXv8_4C0GLK6fsTjE0k__I_0xQyRU-qLUmOM&state=6649088e9dab45e3bc435212e4c65b66&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 7.968ms
+2025-11-06 16:17:18.622 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:17:18.623 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.5157ms
+2025-11-06 16:17:18.623 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:17:18.656 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:17:18.656 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.5744ms
+2025-11-06 16:17:18.656 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:17:20.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?code=ssXMi1lwTA9taaO43D9ZSVtVuQhF6kJsljhPjloO6hQ&state=55c02844619d4ac4940553337d3d1f81&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:17:20.607 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:17:20.608 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:17:20.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?code=ssXMi1lwTA9taaO43D9ZSVtVuQhF6kJsljhPjloO6hQ&state=55c02844619d4ac4940553337d3d1f81&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.4206ms
+2025-11-06 16:17:20.619 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:17:20.620 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.7264ms
+2025-11-06 16:17:20.620 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:17:20.806 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:17:20.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.0778ms
+2025-11-06 16:17:20.808 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:17:20.875 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/resource-collection.6-IR3.js - null null
+2025-11-06 16:17:20.876 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:20.878 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:17:20.878 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/resource-collection.6-IR3.js - 200 61418 application/javascript 3.1035ms
+2025-11-06 16:20:14.015 +02:00 [INF] Starting web host.
+2025-11-06 16:20:14.671 +02:00 [DBG] Loaded ABP modules:
+2025-11-06 16:20:14.671 +02:00 [DBG] - NewJoinerFeedbackWizard.Blazor.NewJoinerFeedbackWizardBlazorModule
+2025-11-06 16:20:14.671 +02:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-11-06 16:20:14.671 +02:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-11-06 16:20:14.671 +02:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-11-06 16:20:14.671 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-11-06 16:20:14.671 +02:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-11-06 16:20:14.671 +02:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-11-06 16:20:14.671 +02:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-11-06 16:20:14.671 +02:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-11-06 16:20:14.671 +02:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-11-06 16:20:14.671 +02:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-11-06 16:20:14.671 +02:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-11-06 16:20:15.163 +02:00 [INF] User profile is available. Using 'C:\Users\aedris\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 16:20:15.323 +02:00 [INF] Initialized all ABP modules.
+2025-11-06 16:20:15.399 +02:00 [INF] Now listening on: https://localhost:44341
+2025-11-06 16:20:15.399 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 16:20:15.399 +02:00 [INF] Hosting environment: Development
+2025-11-06 16:20:15.399 +02:00 [INF] Content root path: D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor
+2025-11-06 16:20:39.124 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2025-11-06 16:20:39.132 +02:00 [INF] The 'WebRootPath' is not set, The 'CheckLibs' feature not needed.
+2025-11-06 16:20:45.592 +02:00 [INF] Executing endpoint '/ (/)'
+2025-11-06 16:20:45.662 +02:00 [INF] Executed endpoint '/ (/)'
+2025-11-06 16:20:45.666 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 6542.2783ms
+2025-11-06 16:20:45.675 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:45.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 4.0596ms
+2025-11-06 16:20:45.680 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:45.730 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - null null
+2025-11-06 16:20:45.772 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-11-06 16:20:45.773 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - 200 71186 application/json 43.8269ms
+2025-11-06 16:20:45.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/appsettings.json - null null
+2025-11-06 16:20:45.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb - null null
+2025-11-06 16:20:45.798 +02:00 [INF] The file /appsettings.json was not modified
+2025-11-06 16:20:45.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/appsettings.json - 304 null application/json 0.8938ms
+2025-11-06 16:20:45.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb - null null
+2025-11-06 16:20:45.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb - null null
+2025-11-06 16:20:45.963 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.963 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.963 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm - null null
+2025-11-06 16:20:45.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm - null null
+2025-11-06 16:20:45.972 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3icfsg3ama-2q5gofpfw6.gz'
+2025-11-06 16:20:45.972 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\6ghhmv92l8-7cgg8zn5xv.gz'
+2025-11-06 16:20:45.972 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\8ocfupibo4-fs34avhcc5.gz'
+2025-11-06 16:20:45.972 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm - null null
+2025-11-06 16:20:45.973 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm'
+2025-11-06 16:20:45.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.m4djhmeloc.wasm - 200 7957 application/wasm 2.2048ms
+2025-11-06 16:20:45.973 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.973 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.973 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm'
+2025-11-06 16:20:45.973 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:45.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.fs34avhcc5.pdb - 200 20113 application/octet-stream 174.7423ms
+2025-11-06 16:20:45.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.7cgg8zn5xv.pdb - 200 18821 application/octet-stream 174.9616ms
+2025-11-06 16:20:45.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.2q5gofpfw6.pdb - 200 30941 application/octet-stream 174.8044ms
+2025-11-06 16:20:45.973 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.zh5s5jiflt.wasm - 200 13077 application/wasm 2.5497ms
+2025-11-06 16:20:45.974 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm'
+2025-11-06 16:20:45.974 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.1rysqlm3wa.wasm - 200 22805 application/wasm 1.4511ms
+2025-11-06 16:20:49.077 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=b60ded38cffc4996bffcfd9f23acd9ed&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:49.080 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.081 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.081 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=b60ded38cffc4996bffcfd9f23acd9ed&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 4.2956ms
+2025-11-06 16:20:49.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:49.089 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.5097ms
+2025-11-06 16:20:49.089 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:49.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=b6bd91ea4a2b49159ccb6265b1db7383&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:49.775 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.776 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.776 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=b6bd91ea4a2b49159ccb6265b1db7383&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.653ms
+2025-11-06 16:20:49.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:49.783 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.3765ms
+2025-11-06 16:20:49.783 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:49.950 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=da92aeb4309a4d93b824c3f93b3a15d9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:49.950 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.951 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:49.951 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=da92aeb4309a4d93b824c3f93b3a15d9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.3983ms
+2025-11-06 16:20:49.957 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:49.957 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.5839ms
+2025-11-06 16:20:49.957 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:50.022 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=121ec5f1c33442899f04b909daae3800&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:50.022 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:50.023 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:50.023 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=121ec5f1c33442899f04b909daae3800&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.5817ms
+2025-11-06 16:20:50.029 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:50.030 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.6131ms
+2025-11-06 16:20:50.030 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:50.073 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=aa347e7979a84673b17098c87b70d011&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:50.073 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:50.074 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:50.074 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=aa347e7979a84673b17098c87b70d011&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.6924ms
+2025-11-06 16:20:50.080 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:50.081 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.6615ms
+2025-11-06 16:20:50.081 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:20:50.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/resource-collection.6-IR3.js - null null
+2025-11-06 16:20:50.119 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:50.121 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:20:50.121 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/resource-collection.6-IR3.js - 200 61418 application/javascript 2.8673ms
+2025-11-06 16:20:51.466 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=320c873e5c7144eda45d8598849d8d43&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:20:51.467 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:51.468 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:20:51.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=320c873e5c7144eda45d8598849d8d43&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.211ms
+2025-11-06 16:20:51.476 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:20:51.476 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.515ms
+2025-11-06 16:20:51.476 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:25:52.782 +02:00 [INF] Starting web host.
+2025-11-06 16:25:53.447 +02:00 [DBG] Loaded ABP modules:
+2025-11-06 16:25:53.448 +02:00 [DBG] - NewJoinerFeedbackWizard.Blazor.NewJoinerFeedbackWizardBlazorModule
+2025-11-06 16:25:53.448 +02:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-11-06 16:25:53.448 +02:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-11-06 16:25:53.448 +02:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-11-06 16:25:53.448 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-11-06 16:25:53.448 +02:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-11-06 16:25:53.448 +02:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-11-06 16:25:53.448 +02:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-11-06 16:25:53.448 +02:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-11-06 16:25:53.448 +02:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-11-06 16:25:53.448 +02:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-11-06 16:25:53.448 +02:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-11-06 16:25:54.034 +02:00 [INF] User profile is available. Using 'C:\Users\aedris\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 16:25:54.300 +02:00 [INF] Initialized all ABP modules.
+2025-11-06 16:25:54.375 +02:00 [INF] Now listening on: https://localhost:44341
+2025-11-06 16:25:54.375 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 16:25:54.375 +02:00 [INF] Hosting environment: Development
+2025-11-06 16:25:54.376 +02:00 [INF] Content root path: D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor
+2025-11-06 16:26:39.342 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2025-11-06 16:26:39.351 +02:00 [INF] The 'WebRootPath' is not set, The 'CheckLibs' feature not needed.
+2025-11-06 16:26:46.395 +02:00 [INF] Executing endpoint '/ (/)'
+2025-11-06 16:26:46.471 +02:00 [INF] Executed endpoint '/ (/)'
+2025-11-06 16:26:46.474 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 7132.326ms
+2025-11-06 16:26:46.482 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:46.488 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 6.1897ms
+2025-11-06 16:26:46.488 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:46.534 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - null null
+2025-11-06 16:26:46.576 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-11-06 16:26:46.578 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - 200 71186 application/json 43.65ms
+2025-11-06 16:26:46.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/appsettings.json - null null
+2025-11-06 16:26:46.607 +02:00 [INF] The file /appsettings.json was not modified
+2025-11-06 16:26:46.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.ghrvqljpdn.pdb - null null
+2025-11-06 16:26:46.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/appsettings.json - 304 null application/json 1.5276ms
+2025-11-06 16:26:46.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.qelryq256u.wasm - null null
+2025-11-06 16:26:46.766 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Blazor.Client.qelryq256u.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Blazor.Client.qelryq256u.wasm'
+2025-11-06 16:26:46.767 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.qelryq256u.wasm - 200 22805 application/wasm 16.4047ms
+2025-11-06 16:26:46.769 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:26:46.792 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Blazor.Client.ghrvqljpdn.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3icfsg3ama-ghrvqljpdn.gz'
+2025-11-06 16:26:46.793 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:26:46.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.ghrvqljpdn.pdb - 200 30885 application/octet-stream 185.6978ms
+2025-11-06 16:26:49.908 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=0c84c3084eef412b855026f830979fe9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:49.912 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:49.914 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:49.915 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=0c84c3084eef412b855026f830979fe9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 6.881ms
+2025-11-06 16:26:49.922 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:49.922 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.7505ms
+2025-11-06 16:26:49.923 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:51.075 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2300f7f8b0674b179a2917d1806f66f7&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:51.076 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.077 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2300f7f8b0674b179a2917d1806f66f7&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.7435ms
+2025-11-06 16:26:51.086 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:51.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.2766ms
+2025-11-06 16:26:51.087 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:51.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=d33f9b692eac43bc8d228b2e70402be0&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:51.337 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.338 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.339 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=d33f9b692eac43bc8d228b2e70402be0&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.7941ms
+2025-11-06 16:26:51.347 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:51.348 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.2063ms
+2025-11-06 16:26:51.348 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:51.494 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=4c4a1bb43f2e4ab7b65b8c89edaca954&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:51.495 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.496 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.496 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=4c4a1bb43f2e4ab7b65b8c89edaca954&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.8101ms
+2025-11-06 16:26:51.503 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:51.504 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.5576ms
+2025-11-06 16:26:51.504 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:51.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=6ea51119987a48708b81326fce0aa476&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:51.608 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.609 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:51.609 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=6ea51119987a48708b81326fce0aa476&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.4562ms
+2025-11-06 16:26:51.617 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:51.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.2486ms
+2025-11-06 16:26:51.618 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:51.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/resource-collection.iBroC.js - null null
+2025-11-06 16:26:51.656 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:26:51.658 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:26:51.659 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/resource-collection.iBroC.js - 200 61419 application/javascript 3.367ms
+2025-11-06 16:26:52.994 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=c45fab6765fe4da5b2e0fc5bae4a8d65&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:26:52.995 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:52.996 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:26:52.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=c45fab6765fe4da5b2e0fc5bae4a8d65&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.8512ms
+2025-11-06 16:26:53.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:53.006 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.9835ms
+2025-11-06 16:26:53.006 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:56.211 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:26:56.212 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.5633ms
+2025-11-06 16:26:56.212 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:26:56.227 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-06 16:26:56.228 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.2857ms
+2025-11-06 16:26:56.228 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-06 16:26:56.406 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:26:56.407 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.6581ms
+2025-11-06 16:26:56.407 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:26:56.462 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - null null
+2025-11-06 16:26:56.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - null null
+2025-11-06 16:26:56.494 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map'
+2025-11-06 16:26:56.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - 200 56573 text/plain 32.9319ms
+2025-11-06 16:26:56.518 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.runtime.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map'
+2025-11-06 16:26:56.519 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - 200 275939 text/plain 40.0451ms
+2025-11-06 16:36:19.772 +02:00 [INF] Starting web host.
+2025-11-06 16:36:20.438 +02:00 [DBG] Loaded ABP modules:
+2025-11-06 16:36:20.439 +02:00 [DBG] - NewJoinerFeedbackWizard.Blazor.NewJoinerFeedbackWizardBlazorModule
+2025-11-06 16:36:20.439 +02:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-11-06 16:36:20.439 +02:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-11-06 16:36:20.439 +02:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-11-06 16:36:20.439 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-11-06 16:36:20.439 +02:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-11-06 16:36:20.439 +02:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-11-06 16:36:20.439 +02:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-11-06 16:36:20.439 +02:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-11-06 16:36:20.439 +02:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-11-06 16:36:20.439 +02:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-11-06 16:36:20.439 +02:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-11-06 16:36:20.977 +02:00 [INF] User profile is available. Using 'C:\Users\aedris\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 16:36:21.305 +02:00 [INF] Initialized all ABP modules.
+2025-11-06 16:36:21.377 +02:00 [INF] Now listening on: https://localhost:44341
+2025-11-06 16:36:21.377 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 16:36:21.377 +02:00 [INF] Hosting environment: Development
+2025-11-06 16:36:21.377 +02:00 [INF] Content root path: D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor
+2025-11-06 16:36:40.387 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2025-11-06 16:36:40.399 +02:00 [INF] The 'WebRootPath' is not set, The 'CheckLibs' feature not needed.
+2025-11-06 16:36:47.410 +02:00 [INF] Executing endpoint '/ (/)'
+2025-11-06 16:36:47.474 +02:00 [INF] Executed endpoint '/ (/)'
+2025-11-06 16:36:47.478 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 7091.1297ms
+2025-11-06 16:36:47.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:47.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 4.958ms
+2025-11-06 16:36:47.495 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:47.540 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - null null
+2025-11-06 16:36:47.591 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-11-06 16:36:47.592 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/blazor.boot.json - 200 71186 application/json 51.9511ms
+2025-11-06 16:36:47.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/appsettings.json - null null
+2025-11-06 16:36:47.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.3oxds3es0x.pdb - null null
+2025-11-06 16:36:47.625 +02:00 [INF] The file /appsettings.json was not modified
+2025-11-06 16:36:47.625 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/appsettings.json - 304 null application/json 1.4809ms
+2025-11-06 16:36:47.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.12yp5vouzs.pdb - null null
+2025-11-06 16:36:47.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.f6igmoyz2o.pdb - null null
+2025-11-06 16:36:47.777 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.n9prk6oj7u.wasm - null null
+2025-11-06 16:36:47.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.tntu2q5hii.wasm - null null
+2025-11-06 16:36:47.778 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.3z1m24598n.wasm - null null
+2025-11-06 16:36:47.783 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.HttpApi.Client.tntu2q5hii.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.HttpApi.Client.tntu2q5hii.wasm'
+2025-11-06 16:36:47.783 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.tntu2q5hii.wasm - 200 7957 application/wasm 5.3797ms
+2025-11-06 16:36:47.786 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.786 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.786 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.798 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Application.Contracts.n9prk6oj7u.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Application.Contracts.n9prk6oj7u.wasm'
+2025-11-06 16:36:47.799 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.n9prk6oj7u.wasm - 200 13077 application/wasm 21.3144ms
+2025-11-06 16:36:47.799 +02:00 [INF] Sending file. Request path: '/_framework/NewJoinerFeedbackWizard.Blazor.Client.3z1m24598n.wasm'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\NewJoinerFeedbackWizard.Blazor.Client.3z1m24598n.wasm'
+2025-11-06 16:36:47.799 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.3z1m24598n.wasm - 200 23317 application/wasm 20.7355ms
+2025-11-06 16:36:47.807 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Application.Contracts.f6igmoyz2o.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\8ocfupibo4-f6igmoyz2o.gz'
+2025-11-06 16:36:47.807 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.Blazor.Client.12yp5vouzs.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\3icfsg3ama-12yp5vouzs.gz'
+2025-11-06 16:36:47.808 +02:00 [INF] Sending file. Request path: '_framework/NewJoinerFeedbackWizard.HttpApi.Client.3oxds3es0x.pdb'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\obj\Debug\net9.0\compressed\6ghhmv92l8-3oxds3es0x.gz'
+2025-11-06 16:36:47.808 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.808 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.808 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:47.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.HttpApi.Client.3oxds3es0x.pdb - 200 18821 application/octet-stream 184.316ms
+2025-11-06 16:36:47.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Application.Contracts.f6igmoyz2o.pdb - 200 20113 application/octet-stream 183.1628ms
+2025-11-06 16:36:47.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/NewJoinerFeedbackWizard.Blazor.Client.12yp5vouzs.pdb - 200 30989 application/octet-stream 183.1601ms
+2025-11-06 16:36:50.945 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=cc533ef18d324dffa7c6c1b97b30a841&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:50.951 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:50.955 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:50.955 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=cc533ef18d324dffa7c6c1b97b30a841&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 9.4759ms
+2025-11-06 16:36:50.965 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:50.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.1988ms
+2025-11-06 16:36:50.966 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:51.499 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:51.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.8413ms
+2025-11-06 16:36:51.499 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:51.525 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-06 16:36:51.527 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.5477ms
+2025-11-06 16:36:51.527 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-06 16:36:51.579 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - null null
+2025-11-06 16:36:51.579 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - null null
+2025-11-06 16:36:51.581 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map'
+2025-11-06 16:36:51.581 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.js.map - 200 56573 text/plain 2.0711ms
+2025-11-06 16:36:51.584 +02:00 [INF] Sending file. Request path: '/_framework/dotnet.runtime.js.map'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map'
+2025-11-06 16:36:51.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/dotnet.runtime.js.map - 200 275939 text/plain 5.4988ms
+2025-11-06 16:36:51.610 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:51.611 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.8155ms
+2025-11-06 16:36:51.611 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:52.423 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2aca890261864f5580af3ef89750021f&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:52.425 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:52.427 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:52.427 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=2aca890261864f5580af3ef89750021f&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.2754ms
+2025-11-06 16:36:52.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:52.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:52.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:52.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:52.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.8563ms
+2025-11-06 16:36:52.444 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:52.456 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:52.457 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 14.0003ms
+2025-11-06 16:36:52.476 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:52.476 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 33.2471ms
+2025-11-06 16:36:52.517 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:52.518 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.0426ms
+2025-11-06 16:36:52.518 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:52.663 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:52.663 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 220.7419ms
+2025-11-06 16:36:52.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:52.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:52.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:52.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:52.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:52.713 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:52.713 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:52.713 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:52.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 499 9227 text/css 19.2582ms
+2025-11-06 16:36:52.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 499 3404 text/css 19.2584ms
+2025-11-06 16:36:52.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 499 127 text/css 18.9903ms
+2025-11-06 16:36:52.714 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:52.714 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 499 306807 text/css 20.0059ms
+2025-11-06 16:36:52.714 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:52.714 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 499 26415 text/css 20.4165ms
+2025-11-06 16:36:52.961 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=f8cc5217a3034d7b8ae9a853f84209af&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:52.962 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:52.964 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:52.964 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=f8cc5217a3034d7b8ae9a853f84209af&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.1878ms
+2025-11-06 16:36:52.980 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:52.980 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:52.980 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:52.980 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:52.981 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:52.981 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.1243ms
+2025-11-06 16:36:52.981 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.3305ms
+2025-11-06 16:36:52.981 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:52.992 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:52.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 11.7525ms
+2025-11-06 16:36:52.992 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:52.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 12.481ms
+2025-11-06 16:36:53.031 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:53.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:53.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:53.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:53.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:53.033 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:53.033 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:53.033 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:53.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 1.3893ms
+2025-11-06 16:36:53.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 1.3943ms
+2025-11-06 16:36:53.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.7087ms
+2025-11-06 16:36:53.034 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:53.034 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.0749ms
+2025-11-06 16:36:53.038 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:53.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 6.0745ms
+2025-11-06 16:36:53.061 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:53.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.6412ms
+2025-11-06 16:36:53.061 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:53.240 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=1467b66802c4487d9c4b85faf83e9bbe&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:53.241 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:53.242 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:53.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=1467b66802c4487d9c4b85faf83e9bbe&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.9702ms
+2025-11-06 16:36:53.261 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:53.261 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:53.261 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:53.261 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:53.262 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:53.262 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.3912ms
+2025-11-06 16:36:53.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.6281ms
+2025-11-06 16:36:53.263 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:53.280 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:53.280 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 19.2653ms
+2025-11-06 16:36:53.281 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:53.281 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 19.9978ms
+2025-11-06 16:36:53.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:53.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:53.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:53.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:53.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:53.325 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:53.325 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.5586ms
+2025-11-06 16:36:53.326 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:53.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 1.5279ms
+2025-11-06 16:36:53.326 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:53.326 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:53.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.3858ms
+2025-11-06 16:36:53.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 1.88ms
+2025-11-06 16:36:53.330 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:53.330 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 6.2253ms
+2025-11-06 16:36:53.414 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:53.416 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 2.0523ms
+2025-11-06 16:36:53.416 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:53.520 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=fc288d7e06b2459fb581f157c06661c0&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:53.521 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:53.522 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:53.522 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=fc288d7e06b2459fb581f157c06661c0&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.1349ms
+2025-11-06 16:36:53.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:53.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:53.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:53.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:53.538 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.9443ms
+2025-11-06 16:36:53.538 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:53.538 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:53.538 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.1251ms
+2025-11-06 16:36:53.550 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:53.551 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 13.5841ms
+2025-11-06 16:36:53.552 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:53.552 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 15.0105ms
+2025-11-06 16:36:53.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:53.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:53.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:53.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:53.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:53.592 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:53.592 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:53.592 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.7383ms
+2025-11-06 16:36:53.592 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.6482ms
+2025-11-06 16:36:53.592 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:53.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 1.9628ms
+2025-11-06 16:36:53.593 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:53.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 2.5479ms
+2025-11-06 16:36:53.598 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:53.598 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 7.1743ms
+2025-11-06 16:36:53.617 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:53.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.062ms
+2025-11-06 16:36:53.619 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:53.712 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/resource-collection.woE24.js - null null
+2025-11-06 16:36:53.714 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:53.717 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-11-06 16:36:53.717 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/resource-collection.woE24.js - 200 61420 application/javascript 4.6759ms
+2025-11-06 16:36:56.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/images/logo/leptonx/logo-light-thumbnail.png - null null
+2025-11-06 16:36:56.306 +02:00 [INF] Sending file. Request path: '/images/logo/leptonx/logo-light-thumbnail.png'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\images\logo\leptonx\logo-light-thumbnail.png'
+2025-11-06 16:36:56.306 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/images/logo/leptonx/logo-light-thumbnail.png - 200 9230 image/png 23.2947ms
+2025-11-06 16:36:56.421 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=825f4213116e487fae99c58ca301c0e9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:56.421 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:56.423 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:56.423 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=825f4213116e487fae99c58ca301c0e9&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 2.5959ms
+2025-11-06 16:36:56.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:56.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:56.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:56.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:56.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 0.6926ms
+2025-11-06 16:36:56.442 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:56.442 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:56.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 0.8764ms
+2025-11-06 16:36:56.451 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:56.451 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:56.452 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 10.3814ms
+2025-11-06 16:36:56.452 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 10.3989ms
+2025-11-06 16:36:56.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:56.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:56.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:56.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:56.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:56.490 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:56.490 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:56.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.1203ms
+2025-11-06 16:36:56.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.273ms
+2025-11-06 16:36:56.490 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:56.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 1.4022ms
+2025-11-06 16:36:56.491 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:56.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 1.9064ms
+2025-11-06 16:36:56.495 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:56.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 5.8847ms
+2025-11-06 16:36:56.550 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:56.551 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 0.9337ms
+2025-11-06 16:36:56.551 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:36:56.985 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=9c6f33ed8f0e4016bc3875b1bad1f018&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - null null
+2025-11-06 16:36:56.986 +02:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:56.987 +02:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-11-06 16:36:56.987 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/authentication/login-callback?error=login_required&error_description=The%20user%20is%20not%20logged%20in.&error_uri=https%3A%2F%2Fdocumentation.openiddict.com%2Ferrors%2FID2015&state=9c6f33ed8f0e4016bc3875b1bad1f018&iss=https%3A%2F%2Flocalhost%3A44334%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.6157ms
+2025-11-06 16:36:57.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.css - null null
+2025-11-06 16:36:57.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/main.css - null null
+2025-11-06 16:36:57.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/styles.css - null null
+2025-11-06 16:36:57.006 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/global.js - null null
+2025-11-06 16:36:57.007 +02:00 [INF] Sending file. Request path: '/main.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\main.css'
+2025-11-06 16:36:57.007 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/styles.css - 404 0 null 1.2404ms
+2025-11-06 16:36:57.007 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/main.css - 200 1282 text/css 1.361ms
+2025-11-06 16:36:57.007 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/styles.css, Response status code: 404
+2025-11-06 16:36:57.016 +02:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.js'
+2025-11-06 16:36:57.016 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.js - 200 592596 application/javascript 10.7853ms
+2025-11-06 16:36:57.017 +02:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'D:\BootcampMaterial\NewJoinerFeedbackWizard\src\NewJoinerFeedbackWizard.Blazor.Client\wwwroot\global.css'
+2025-11-06 16:36:57.017 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/global.css - 200 649494 text/css 11.9332ms
+2025-11-06 16:36:57.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-11-06 16:36:57.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-11-06 16:36:57.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-11-06 16:36:57.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-11-06 16:36:57.057 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-11-06 16:36:57.058 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\font-bundle.css'
+2025-11-06 16:36:57.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 127 text/css 1.1099ms
+2025-11-06 16:36:57.058 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\blazor-bundle.css'
+2025-11-06 16:36:57.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9227 text/css 1.6801ms
+2025-11-06 16:36:57.058 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\abp-bundle.css'
+2025-11-06 16:36:57.058 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\layout-bundle.css'
+2025-11-06 16:36:57.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 26415 text/css 1.8544ms
+2025-11-06 16:36:57.058 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3404 text/css 1.912ms
+2025-11-06 16:36:57.063 +02:00 [INF] Sending file. Request path: '/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css'. Physical path: 'C:\Users\aedris\.nuget\packages\volo.abp.aspnetcore.components.web.leptonxlitetheme\4.3.6\staticwebassets\side-menu\css\bootstrap-dim.css'
+2025-11-06 16:36:57.063 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 200 306807 text/css 6.2637ms
+2025-11-06 16:36:57.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - null null
+2025-11-06 16:36:57.119 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44341/bootstrap.min.css.map - 404 0 null 1.4496ms
+2025-11-06 16:36:57.119 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44341/bootstrap.min.css.map, Response status code: 404
+2025-11-06 16:37:10.125 +02:00 [INF] Application is shutting down...

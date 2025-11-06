@@ -4,13 +4,15 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @using NewJoinerFeedbackWizard.Blazor.Client.Pages
 
-@if (CurrentUser == null)
+@if (IsLoading)
 {
-    <h1>Welcome to the New Joiner Feedback Wizard</h1>
-    <p>Please log in to access your dashboard.</p>
+	<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
 }
 else
 {
-    <h1>Hello, @CurrentUser.Name!</h1>
-    <p>Your roles: @string.Join(", ", CurrentUser.Roles)</p>
+	<h1> Welcome to the New Joiner Feedback Wizard!</h1>
 }
