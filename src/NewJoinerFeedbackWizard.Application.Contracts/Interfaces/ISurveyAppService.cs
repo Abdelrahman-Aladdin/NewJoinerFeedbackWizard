@@ -14,5 +14,9 @@ namespace NewJoinerFeedbackWizard.Interfaces
         Task<SurveyDto?> GetSurveyByEmployeeName(string employeeName);
         Task<List<SurveyDto>> GetAllSurveys();
         Task Delete(Guid id);
+
+        // for manager
+        Task<List<SurveyDto>> GetSurveysByManager(string managerName);
+        Task<List<SurveyDto>> GetMySubmittedSurveys();
     }
 }

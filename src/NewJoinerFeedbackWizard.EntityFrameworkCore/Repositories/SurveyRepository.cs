@@ -18,5 +18,23 @@ namespace NewJoinerFeedbackWizard.Repositories
             var queryable = await GetQueryableAsync();
             return await queryable.FirstOrDefaultAsync(s => s.EmployeeName == employeeName);
         }
+
+        public async Task<List<Survey>> GetByManagerNameAsync(string managerName)
+        {
+            var dbSet = await GetDbSetAsync();
+            return await dbSet
+                .Where(s => s.ManagerName == managerName)
+                .OrderByDescending(s => s.CreationTime)
+                .ToListAsync();
+        }
+
+        public async Task<List<Survey>> GetBySubmittedByAsync(string submittedBy)
+        {
+            var dbSet = await GetDbSetAsync();
+            return await dbSet
+                .Where(s => s.CreatorId != null) // Filter by creator
+                .OrderByDescending(s => s.CreationTime)
+                .ToListAsync();
+        }
     }
 }

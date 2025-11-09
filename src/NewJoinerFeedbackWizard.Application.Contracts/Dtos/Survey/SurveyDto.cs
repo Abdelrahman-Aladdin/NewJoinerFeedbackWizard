@@ -17,5 +17,7 @@ namespace NewJoinerFeedbackWizard.Dtos.Survey
         public string Recommendations { get; set; }
         public string StrengthsObserved { get; set; }
         public string MissingAreas { get; set; }
+        public DateTime CreationTime { get; set; }
+        public Guid? CreatorId { get; set; }
     }
 }

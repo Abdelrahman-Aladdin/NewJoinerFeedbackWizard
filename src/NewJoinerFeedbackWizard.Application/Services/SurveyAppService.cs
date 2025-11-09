@@ -41,5 +41,21 @@ namespace NewJoinerFeedbackWizard.Services
         {
             await _surveyRepository.DeleteAsync(id);
         }
+
+
+        [Authorize(SurveyPermissions.ViewAll)]
+        public async Task<List<SurveyDto>> GetSurveysByManager(string managerName)
+        {
+            var surveys = await _surveyRepository.GetByManagerNameAsync(managerName);
+            return ObjectMapper.Map<List<Survey>, List<SurveyDto>>(surveys);
+        }
+
+        [Authorize(SurveyPermissions.View)]
+        public async Task<List<SurveyDto>> GetMySubmittedSurveys()
+        {
+            var currentUserName = $"{CurrentUser.Name} {CurrentUser.SurName}";
+            var surveys = await _surveyRepository.GetBySubmittedByAsync(currentUserName);
+            return ObjectMapper.Map<List<Survey>, List<SurveyDto>>(surveys);
+        }
     }
 }
