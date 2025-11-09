@@ -16,6 +16,7 @@
 }
 else
 {
+<<<<<<< HEAD
     <AuthorizeView>
         <Authorized>
             @if (CurrentUser != null)
@@ -93,3 +94,25 @@ else
     .hover-card { transition: transform .2s ease, box-shadow .2s ease; }
     .hover-card:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0,0,0,.12) !important; }
 </style>
+=======
+	if (CurrentUser.Roles.Length == 0)
+	{
+		<h1>Please Login</h1>
+	}
+	else
+	{
+		if (CurrentUser.Roles.Contains("Admin"))
+		{
+			<h1>Admin Dashboard</h1>
+		}
+		else if (CurrentUser.Roles.Contains("Manager"))
+		{
+			<h1>Manager Dashboard</h1>
+		}
+		else if (CurrentUser.Roles.Contains("Employee"))
+		{
+			<h1>Employee Dashboard</h1>
+		}
+	}
+}
+>>>>>>> 2d48af15b23d685cd074987bdbdf50386d4d2cf4
