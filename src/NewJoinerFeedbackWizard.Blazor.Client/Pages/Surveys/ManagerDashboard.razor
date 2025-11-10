@@ -7,6 +7,7 @@
 @inject ISurveyAppService SurveyAppService
 @inject IUserAppService UserAppService
 @inject IUiMessageService MessageService
+@inject IJSRuntime JS
 @attribute [Authorize(SurveyPermissions.ViewAll)]
 
 <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 p-4">
@@ -77,8 +78,8 @@
 
         <!-- Search -->
         <div class="card mb-4 border-0 shadow-sm">
-            <div class="card-body">
-                <div class="input-group">
+            <div class="card-body d-flex align-items-center">
+                <div class="input-group me-2 flex-grow-1">
                     <span class="input-group-text bg-white" style="border: 2px solid #bfdbfe; border-right: none;">
                         <i class="fas fa-search text-primary"></i>
                     </span>
@@ -89,6 +90,20 @@
                            placeholder="Search by employee or lead name..."
                            style="border: 2px solid #bfdbfe; border-left: none;" />
                 </div>
+
+                <button class="btn btn-primary d-inline-flex align-items-center" 
+                        type="button" 
+                        style="white-space: nowrap; padding: 0.5rem 1rem;"
+                        @onclick="ExportToExcel">
+                        @if (IsDownloadInProgress)
+                        {
+                            <MudProgressCircular Class="me-2" Size=Size.Small Indeterminate="true" Color="Color.Inherit" />
+                            <span>Downloading...</span>
+                        } else {
+                            <i class="fas fa-file-excel me-2"></i>
+                            <span>Export Excel</span>
+                        }
+                </button>
             </div>
         </div>
 
@@ -207,89 +222,3 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
         }
 </style>
-
-@code {
-    private List<SurveyDto> AllSurveys { get; set; } = new();
-    private List<SurveyDto> FilteredSurveys { get; set; } = new();
-    private string SearchTerm { get; set; } = string.Empty;
-    private Guid? ExpandedSurveyId { get; set; }
-    private bool IsLoading { get; set; } = true;
-    private UserDto? CurrentUserInfo { get; set; }
-
-    private int TotalCount => AllSurveys.Count;
-    private int ThisMonthCount => AllSurveys.Count(s => s.CreationTime.Month == DateTime.Now.Month && s.CreationTime.Year == DateTime.Now.Year);
-    private int AvgSatisfaction => AllSurveys.Any() ? (int)AllSurveys.Average(s => s.SatisfactionLevel) : 0;
-    private int UniqueEmployees => AllSurveys.Select(s => s.EmployeeName).Distinct().Count();
-
-    protected override async Task OnInitializedAsync()
-    {
-        await LoadCurrentUser();
-        await LoadSurveys();
-    }
-
-    private async Task LoadCurrentUser()
-    {
-        try
-        {
-            CurrentUserInfo = await UserAppService.GetCurrentUserAsync();
-        }
-        catch (Exception ex)
-        {
-            await MessageService.Error($"Error loading user info: {ex.Message}");
-        }
-    }
-
-    private async Task LoadSurveys()
-    {
-        try
-        {
-            IsLoading = true;
-
-            // If user is manager, get their team surveys, otherwise get all
-            if (CurrentUserInfo != null && CurrentUserInfo.Roles.Contains("Manager"))
-            {
-                AllSurveys = await SurveyAppService.GetSurveysByManager(CurrentUserInfo.Name);
-            }
-            else
-            {
-                AllSurveys = await SurveyAppService.GetAllSurveys();
-            }
-
-            ApplyFilters();
-        }
-        catch (Exception ex)
-        {
-            await MessageService.Error($"Error loading surveys: {ex.Message}");
-            AllSurveys = new List<SurveyDto>();
-            FilteredSurveys = new List<SurveyDto>();
-        }
-        finally
-        {
-            IsLoading = false;
-        }
-    }
-
-    private void OnSearchChanged()
-    {
-        ApplyFilters();
-    }
-
-    private void ApplyFilters()
-    {
-        FilteredSurveys = AllSurveys.Where(s =>
-        {
-            var matchesSearch = string.IsNullOrWhiteSpace(SearchTerm) ||
-                               s.EmployeeName.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                               s.LeadName.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase);
-            return matchesSearch;
-        }).ToList();
-    }
-
-    private string GetSatisfactionColor(int level)
-    {
-        if (level >= 80) return "#16a34a"; // Green
-        if (level >= 60) return "#2563eb"; // Blue
-        if (level >= 40) return "#f97316"; // Orange
-        return "#dc2626"; // Red
-    }
-}
