@@ -1,6 +1,6 @@
 ﻿/* Fix 1: Icon circle size in wizard - More specific selector */
 .text-center > .d-inline-flex.align-items-center.justify-content-center {
-    width: 80px !important;
+    width: 85px !important;
     height: 80px !important;
     min-width: 80px !important;
     min-height: 80px !important;
