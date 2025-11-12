@@ -8,7 +8,7 @@ using Serilog.Events;
 
 namespace NewJoinerFeedbackWizard;
 
-public class Program
+public static class Program
 {
     public async static Task<int> Main(string[] args)
     {
@@ -50,7 +50,7 @@ public class Program
         }
         finally
         {
-            Log.CloseAndFlush();
+            await Log.CloseAndFlushAsync();
         }
     }
 }

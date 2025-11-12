@@ -8,7 +8,7 @@ namespace NewJoinerFeedbackWizard;
 [Dependency(ReplaceServices = true)]
 public class NewJoinerFeedbackWizardBrandingProvider : DefaultBrandingProvider
 {
-    private IStringLocalizer<NewJoinerFeedbackWizardResource> _localizer;
+    private readonly IStringLocalizer<NewJoinerFeedbackWizardResource> _localizer;
 
     public NewJoinerFeedbackWizardBrandingProvider(IStringLocalizer<NewJoinerFeedbackWizardResource> localizer)
     {
