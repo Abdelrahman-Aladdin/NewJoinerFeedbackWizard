@@ -12,7 +12,11 @@ public class NewJoinerFeedbackWizardPermissionDefinitionProvider : PermissionDef
         //Define your own permissions here. Example:
         //myGroup.AddPermission(NewJoinerFeedbackWizardPermissions.MyPermission1, L("Permission:MyPermission1"));
     }
-
+    /// <summary>
+    /// TODO:Remove un used function
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
     private static LocalizableString L(string name)
     {
         return LocalizableString.Create<NewJoinerFeedbackWizardResource>(name);

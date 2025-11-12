@@ -286,20 +286,17 @@ public class OpenIddictDataSeedContributor : IDataSeedContributor, ITransientDep
             }
         }
 
-        if (postLogoutRedirectUri != null)
+        if (postLogoutRedirectUri != null && !postLogoutRedirectUri.IsNullOrEmpty())
         {
-            if (!postLogoutRedirectUri.IsNullOrEmpty())
+            if (!Uri.TryCreate(postLogoutRedirectUri, UriKind.Absolute, out var uri) ||
+                !uri.IsWellFormedOriginalString())
             {
-                if (!Uri.TryCreate(postLogoutRedirectUri, UriKind.Absolute, out var uri) ||
-                    !uri.IsWellFormedOriginalString())
-                {
-                    throw new BusinessException(L["InvalidPostLogoutRedirectUri", postLogoutRedirectUri]);
-                }
+                throw new BusinessException(L["InvalidPostLogoutRedirectUri", postLogoutRedirectUri]);
+            }
 
-                if (application.PostLogoutRedirectUris.All(x => x != uri))
-                {
-                    application.PostLogoutRedirectUris.Add(uri);
-                }
+            if (application.PostLogoutRedirectUris.All(x => x != uri))
+            {
+                application.PostLogoutRedirectUris.Add(uri);
             }
         }
 
