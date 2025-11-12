@@ -96,6 +96,8 @@
     "Delete:Confirmation": "Are you sure you want to delete this survey?",
     "Delete:SurveyDeletedSuccessfully": "Survey has been deleted successfully!",
     "Delete:FailedToDeleteSurvey": "Failed to delete survey. Please try again.",
+    "Delete:Confirm": "Confirm Delete",
+    "Delete:Cancel": "Cancel",
 
     "HideDetails": "Hide Details",
     "SurveySubmission": "Survey Submission",

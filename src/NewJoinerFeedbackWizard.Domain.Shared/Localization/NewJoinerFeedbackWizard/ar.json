@@ -100,6 +100,8 @@
     "Delete:Confirmation": "هل أنت متأكد من رغبتك في حذف هذا الاستطلاع؟",
     "Delete:SurveyDeletedSuccessfully": "تم حذف الاستطلاع بنجاح!",
     "Delete:FailedToDeleteSurvey": "فشل حذف الاستطلاع. يرجى المحاولة مرة أخرى.",
+    "Delete:Confirm": "تأكيد الحذف",
+    "Delete:Cancel": "الغاء",
 
 
 
